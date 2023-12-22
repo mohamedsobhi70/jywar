@@ -677,11 +677,13 @@ html {
 /* header */
 
 .jywar-header {
-  position: absolute;
+  position: sticky;
   top: 0px;
   inset-inline-start: 0px;
   z-index: 50;
   width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 88 92 / var(--tw-bg-opacity));
 }
 
 .nav-link {
@@ -1034,10 +1036,6 @@ html {
   width: 255px;
 }
 
-.w-\[256px\] {
-  width: 256px;
-}
-
 .w-\[25px\] {
   width: 25px;
 }
@@ -1056,6 +1054,14 @@ html {
 
 .grow {
   flex-grow: 1;
+}
+
+.scroll-mt-28 {
+  scroll-margin-top: 7rem;
+}
+
+.scroll-mt-16 {
+  scroll-margin-top: 4rem;
 }
 
 .grid-cols-1 {
@@ -1478,6 +1484,10 @@ html {
     width: 200px;
   }
 
+  .lg\:w-\[256px\] {
+    width: 256px;
+  }
+
   .lg\:w-\[257px\] {
     width: 257px;
   }
@@ -1492,10 +1502,6 @@ html {
 
   .lg\:w-\[46\%\] {
     width: 46%;
-  }
-
-  .lg\:w-\[256px\] {
-    width: 256px;
   }
 
   .lg\:grid-cols-12 {
@@ -1639,11 +1645,6 @@ html {
   .lg\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .lg\:leading-\[120\%\] {
