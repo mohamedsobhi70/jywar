@@ -46,8 +46,11 @@
         <section class="bg-Base-800 overflow-hidden">
             <div
                 class="container grid grid-cols-1 lg:grid-cols-2 gap-20 items-center pt-[140px] pb-[75px] lg:py-[140px] lg:pt-40 relative  px-5 lg:px-0">
+                <div class="circle-shap circle-shap-3 hidden lg:block"></div>
+                <div class="circle-shap circle-shap-4 hidden lg:block"></div>
                 <img src="assets/images/hero-1.png" class="absolute bottom-0 -right-32 hidden lg:block" width="513"
                     height="292" alt="abs">
+
                 <div class="flex flex-col gap-12 items-center lg:items-start">
                     <div class="flex flex-col gap-6 items-center lg:items-start">
                         <h1
@@ -136,7 +139,7 @@
 
 
         <!-- Start Jywar Services Section  -->
-        <section class="py-20 lg:py-[140px] px-5 lg:px-0 scroll-mt-16" id="services">
+        <section class="py-20 lg:py-[140px] px-5 lg:px-0 scroll-mt-16 overflow-hidden" id="services">
 
             <div class="container flex flex-col gap-16">
 
@@ -371,7 +374,7 @@
 
 
         <!-- Start Jywar  Section  -->
-        <section class="py-20 lg:py-[140px] px-5 lg:px-0 bg-white scroll-mt-16" id="howtowork">
+        <section class="py-20 lg:py-[140px] px-5 lg:px-0 bg-white scroll-mt-16 overflow-hidden" id="howtowork">
             <div class="container grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                 <div class="flex flex-col gap-8 ">
                     <h2 class="section-title">
@@ -382,7 +385,7 @@
                     </p>
                 </div>
 
-                <div class="flex flex-col gap-5">
+                <div class="flex flex-col gap-5 relative">
                     <div class="steps-item relative flex items-center gap-5">
                         <span
                             class="absolute w-[1px] h-1/2 bg-Base-300 top-[calc(50%+40px)] lg:top-[calc(50%+48px)] start-5 lg:start-6">
@@ -397,7 +400,8 @@
                                 class="text-Neutral-Black text-2xl lg:text-[32px] leading-[120%] lg:leading-[140%] font-semibold grow">
                                 أضف وحدتك السكنية
                             </p>
-                            <div class="shrink-0 border border-Base-300 rounded-xl lg:rounded-[20px] p-2.5 lg:p-4 bg-Base-100">
+                            <div
+                                class="shrink-0 border border-Base-300 rounded-xl lg:rounded-[20px] p-2.5 lg:p-4 bg-Base-100">
                                 <img src="assets/images/fluent_building-24-filled.svg"
                                     class="w-[25px] h-[25px] lg:h-10 lg:w-10" width="40" height="40"
                                     alt="game-icons_hand-ok">
@@ -421,7 +425,8 @@
                                 class="text-Neutral-Black text-2xl lg:text-[32px] leading-[120%] lg:leading-[140%] font-semibold grow">
                                 نقوم بتنظيف وتصوير وحدتك لاستقبال الطلبات
                             </p>
-                            <div class="shrink-0 border border-Base-300 rounded-xl lg:rounded-[20px] p-2.5 lg:p-4 bg-Base-100">
+                            <div
+                                class="shrink-0 border border-Base-300 rounded-xl lg:rounded-[20px] p-2.5 lg:p-4 bg-Base-100">
                                 <img src="assets/images/game-icons_hand-ok.svg"
                                     class="w-[25px] h-[25px] lg:h-10 lg:w-10" width="40" height="40"
                                     alt="game-icons_hand-ok">
@@ -442,12 +447,19 @@
                                 class="text-Neutral-Black text-2xl lg:text-[32px] leading-[120%] lg:leading-[140%] font-semibold grow">
                                 اختر أفضل مستأجر وسنرسل العقد
                             </p>
-                            <div class="shrink-0 border border-Base-300 rounded-xl lg:rounded-[20px] p-2.5 lg:p-4 bg-Base-100">
+                            <div
+                                class="shrink-0 border border-Base-300 rounded-xl lg:rounded-[20px] p-2.5 lg:p-4 bg-Base-100">
                                 <img src="assets/images/mdi_user-box.svg" class="w-[25px] h-[25px] lg:h-10 lg:w-10"
                                     width="40" height="40" alt="game-icons_hand-ok">
                             </div>
                         </div>
                     </div>
+                    <svg class="absolute -bottom-28 lg:-bottom-36 start-1/4" width="146" height="91"
+                        viewBox="0 0 146 91" fill="none">
+                        <path
+                            d="M132.489 90.3349C131.752 91.1574 130.488 91.2266 129.665 90.4893L116.261 78.4755C115.439 77.7383 115.369 76.4738 116.107 75.6513C116.844 74.8288 118.108 74.7596 118.931 75.4968L130.846 86.1758L141.524 74.2611C142.262 73.4386 143.526 73.3694 144.349 74.1066C145.171 74.8439 145.24 76.1083 144.503 76.9308L132.489 90.3349ZM4 0C4 2.99631 5.52766 5.76995 8.71151 8.50974C11.9193 11.2701 16.6161 13.8195 22.4718 16.3064C34.2237 21.2973 49.8246 25.7219 65.9039 31.222C81.8431 36.6742 98.1076 43.1449 110.614 52.1513C123.165 61.1904 132.124 72.9326 132.997 88.8908L129.003 89.1092C128.218 74.7566 120.223 64.0008 108.276 55.3972C96.284 46.761 80.5057 40.4443 64.6093 35.0067C48.8531 29.6171 32.8257 25.0494 20.9082 19.9881C14.9292 17.4489 9.78094 14.7071 6.10244 11.5417C2.39998 8.35562 0 4.56869 0 0H4Z"
+                            fill="#0CB0A6" />
+                    </svg>
                 </div>
             </div>
         </section>
@@ -456,7 +468,7 @@
 
 
         <!-- Start Jywar  Section  -->
-        <section class="pt-20 lg:pt-24 px-5 lg:px-0 bg-white">
+        <section class="pt-20 lg:pt-24 px-5 lg:px-0 bg-white overflow-hidden">
             <div class="container flex flex-col gap-12">
                 <header class="flex flex-col gap-8">
                     <h2 class="section-title lg:text-center">
@@ -467,7 +479,8 @@
                     </p>
                 </header>
                 <div class="h-[193px] lg:h-[370px] -ms-5 lg:m-0">
-                    <img src="assets/images/how.png" class="h-full object-cover object-left-top" width="1200" height="370" alt="im1">
+                    <img src="assets/images/how.png" class="h-full object-cover object-left-top" width="1200"
+                        height="370" alt="im1">
                 </div>
             </div>
 
@@ -477,9 +490,9 @@
 
 
         <!-- Start Jywar  Section  -->
-        <section class="py-20 lg:py-[140px] px-5 lg:px-0">
+        <section class="py-20 lg:py-[140px] px-5 lg:px-0 overflow-hidden">
             <div class="container grid grid-cols-1 lg:grid-cols-2 gap-20">
-                <div class="flex flex-col gap-8 h-fit lg:sticky lg:top-24">
+                <div class="flex flex-col gap-8 h-fit lg:sticky lg:top-36">
                     <h2 class="section-title">
                         عقارك او استثمارك ونمو دخلك هي مهمتنا
                     </h2>

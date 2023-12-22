@@ -619,6 +619,7 @@ video {
 }
 
 body {
+  overflow-x: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(246 248 248 / var(--tw-bg-opacity));
   font-family: zarid, sans-serif;
@@ -863,6 +864,10 @@ html {
   position: relative;
 }
 
+.-bottom-28 {
+  bottom: -7rem;
+}
+
 .-right-32 {
   right: -8rem;
 }
@@ -901,6 +906,10 @@ html {
 
 .start-0 {
   inset-inline-start: 0px;
+}
+
+.start-1\/4 {
+  inset-inline-start: 25%;
 }
 
 .start-5 {
@@ -1054,10 +1063,6 @@ html {
 
 .grow {
   flex-grow: 1;
-}
-
-.scroll-mt-28 {
-  scroll-margin-top: 7rem;
 }
 
 .scroll-mt-16 {
@@ -1284,6 +1289,18 @@ html {
   padding-top: 140px;
 }
 
+.pt-16 {
+  padding-top: 4rem;
+}
+
+.pb-\[120px\] {
+  padding-bottom: 120px;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1392,6 +1409,10 @@ html {
     position: sticky;
   }
 
+  .lg\:-bottom-36 {
+    bottom: -9rem;
+  }
+
   .lg\:bottom-\[calc\(50\%\+48px\)\] {
     bottom: calc(50% + 48px);
   }
@@ -1402,6 +1423,10 @@ html {
 
   .lg\:top-24 {
     top: 6rem;
+  }
+
+  .lg\:top-36 {
+    top: 9rem;
   }
 
   .lg\:top-\[calc\(50\%\+48px\)\] {
@@ -1590,6 +1615,11 @@ html {
   .lg\:py-\[140px\] {
     padding-top: 140px;
     padding-bottom: 140px;
+  }
+
+  .lg\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .lg\:pt-24 {

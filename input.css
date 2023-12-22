@@ -30,7 +30,7 @@
 }
 @layer components {
   body {
-    @apply bg-Base-100 font-zarid;
+    @apply bg-Base-100 font-zarid overflow-x-hidden;
   }
   html {
     @apply scroll-smooth;
