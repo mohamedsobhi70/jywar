@@ -49,7 +49,7 @@
 
   /* header */
   .jywar-header {
-    @apply sticky top-0 start-0 w-full z-50 bg-Base-800 ;
+    @apply sticky top-0 start-0 w-full z-50 bg-Base-800;
   }
   .nav-link {
     @apply text-[28px] text-Base-300;
@@ -108,5 +108,33 @@
   }
   .circle-shap-4 {
     @apply bottom-[-20px] right-[-150px];
+  }
+  input {
+    direction: rtl;
+  }
+
+  select {
+    @apply bg-[url(../images/arrow-down.png)] bg-no-repeat bg-select cursor-pointer;
+  }
+  .fieldset-title {
+    @apply pb-4 border-b border-Base-200 text-Base-700 text-2xl leading-[120%] font-semibold;
+  }
+  .label-title {
+    @apply text-black font-semibold text-base leading-[120%];
+  }
+  .form-input {
+    @apply outline-none border border-Base-200 rounded-xl p-4 bg-Base-100 text-base text-Base-900 font-bold placeholder:text-Base-500 placeholder:font-normal;
+  }
+  .form-radio {
+    @apply appearance-none rounded-[4px] border border-[#B9C0D4] cursor-pointer checked:border-[#0CB0A6] checked:bg-[#0CB0A6] checked:bg-[url(../images/radio.svg)] bg-center bg-no-repeat outline-none w-4 h-4 focus:ring-transparent;
+  }
+  .form-radio:checked ~ label {
+    @apply text-Base-900 font-bold;
+  }
+  .privileges-item {
+    @apply p-4 bg-Base-200 rounded-full flex items-center gap-4 text-base text-black leading-[120%] font-semibold;
+  }
+  .privileges-item .icon {
+    @apply p-1 w-[18px] h-[18px] rounded-full bg-[#0CB0A6] flex items-center justify-center shrink-0;
   }
 }

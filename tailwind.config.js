@@ -21,9 +21,12 @@ module.exports = {
       colors: {
         "Neutral-Black": "#121617",
         "Base-100": "#F6F8F8",
+        "Base-200": "#E2E7E9",
         "Base-300": "#C5CFD3",
         "Base-400": "#A9B8BC",
+        "Base-500": "#8CA1A6",
         "Base-600": "#6B848A",
+        "Base-700": "#5D7479",
         "Base-800": "#47585C",
         "Base-900": "#3C4A4E",
         "blue-500": "#479CFF",
@@ -43,6 +46,9 @@ module.exports = {
       backgroundImage: {
         "herograd": "linear-gradient(180deg, #596D73 48.18%, rgba(89, 109, 115, 0.00) 99.99%);"
       },
+      backgroundPosition: {
+        "select": "20px center"
+      }
     }
   },
   plugins: [],

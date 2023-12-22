@@ -15,15 +15,378 @@
 
     <!-- Start Jywar Main Page Content  -->
     <main>
-        <section class="pt-16 pb-[120px] ">
+        <section class="pt-16 pb-[120px] px-5 lg:px-0">
             <div class="container flex flex-col gap-20">
                 <div class="flex justify-center">
-                    <a href="#"
+                    <a href="index.html"
                         class="text-[28px] -tracking-[0.616px] leading-normal font-bold text-Base-900 font-BukraWide">
                         جـِـوار
                     </a>
                 </div>
 
+                <div class="flex flex-col gap-12">
+                    <header class="flex flex-col gap-6">
+                        <h1 class="text-[#0CB0A6] text-5xl leading-[120%] font-bold text-center">
+                            املئ بيانات عقارك
+                        </h1>
+                        <p class="text-[28px] leading-[120%] text-Base-600 text-center">
+                            سيقوم فريق جوار بمراجعة المعلومات والتواصل معك
+                        </p>
+                    </header>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-[60px]">
+
+                        <div
+                            class="col-span-1 lg:col-span-2 p-6 lg:p-10 bg-white border border-[#0CB0A6] rounded-[20px] shadow-services-shad">
+                            <form>
+                                <div class="flex flex-col gap-[60px]">
+
+                                    <fieldset class="flex flex-col gap-8">
+                                        <h3 class="fieldset-title">
+                                            البيانات الأساسية
+                                        </h3>
+
+                                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-6">
+                                            <!-- Full Name  -->
+                                            <div class=" flex flex-col gap-4">
+                                                <label for="fullname" class="label-title">الاسم بالكامل</label>
+                                                <input type="text" id="fullname" name="fullname"
+                                                    placeholder="أدخل اسمك الكامل" class="form-input">
+                                            </div>
+
+
+                                            <!-- Phone Number Name  -->
+                                            <div class=" flex flex-col gap-4">
+                                                <label for="phonenum" class="label-title"> رقم جوالك</label>
+                                                <input type="tel" id="phonenum" name="phonenum"
+                                                    placeholder="أدخل رقم جوالك" class="form-input">
+                                            </div>
+
+
+                                            <!-- city  -->
+                                            <div class=" flex flex-col gap-4">
+                                                <label for="city" class="label-title">المدينة</label>
+                                                <select name="city" id="city" class="form-input appearance-none">
+                                                    <option value="1">الرياض</option>
+                                                    <option value="2">جده</option>
+                                                </select>
+                                            </div>
+
+
+                                            <!-- location  -->
+                                            <div class=" flex flex-col gap-4">
+                                                <label for="location" class="label-title">منطقة العقار</label>
+                                                <input type="text" id="location" name="location"
+                                                    placeholder="الرجاء تحديد المنطقة التي يقع فيها العقار"
+                                                    class="form-input">
+                                            </div>
+
+
+                                            <!-- Address  -->
+                                            <div class=" flex flex-col gap-4">
+                                                <label for="address" class="label-title">عنوان العقار بالتفصيل</label>
+                                                <input type="text" id="address" name="address"
+                                                    placeholder="أدخل اسم المبنى الخاص بك" class="form-input">
+                                            </div>
+
+
+                                            <!-- Building  date -->
+                                            <div class=" flex flex-col gap-4">
+                                                <label for="date" class="label-title">متى أُنشئ المبنى؟</label>
+                                                <select name="date" id="date" class="form-input appearance-none">
+                                                    <option value="1">٣٢ سنة</option>
+                                                    <option value="2">سنة</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+
+
+                                    <fieldset class="flex flex-col gap-8">
+                                        <h3 class="fieldset-title">
+                                            معلومات عن المرافق
+                                        </h3>
+
+                                        <div class="grid grid-cols-1 lg:grid-cols-6 gap-x-8 gap-y-6">
+                                            <!--   -->
+                                            <div class="col-span-1 lg:col-span-6 flex flex-col gap-4">
+                                                <h4 class="label-title">هل يوجد وحدات مفروشة؟</h4>
+
+                                                <div class="grid lg:grid-cols-3 gap-5">
+                                                    <div class="flex items-center gap-3">
+                                                        <input type="radio" class="form-radio" name="furnished"
+                                                            id="yes-furnished">
+                                                        <label for="yes-furnished"
+                                                            class="cursor-pointer text-lg text-Base-500">نعم</label>
+                                                    </div>
+
+                                                    <div class="flex items-center gap-3">
+                                                        <input type="radio" class="form-radio" name="furnished"
+                                                            id="not-furnished">
+                                                        <label for="not-furnished"
+                                                            class="cursor-pointer text-lg text-Base-500">لا</label>
+                                                    </div>
+
+                                                    <div class="flex items-center gap-3">
+                                                        <input type="radio" class="form-radio" name="furnished"
+                                                            id="som-furnished">
+                                                        <label for="som-furnished"
+                                                            class="cursor-pointer text-lg text-Base-500">بعضهم وحدات
+                                                            مفروشة</label>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+
+                                            <!--   -->
+                                            <div class="col-span-1 lg:col-span-3 flex flex-col gap-4">
+                                                <h4 class="label-title">هل تم تركيب مكيف الهواء في المبنى الخاص بك؟</h4>
+
+                                                <div class="grid lg:grid-cols-2 gap-5">
+                                                    <div class="flex items-center gap-3">
+                                                        <input type="radio" class="form-radio" name="conditioning"
+                                                            id="yes-conditioning">
+                                                        <label for="yes-conditioning"
+                                                            class="cursor-pointer text-lg text-Base-500">نعم</label>
+                                                    </div>
+
+                                                    <div class="flex items-center gap-3">
+                                                        <input type="radio" class="form-radio" name="conditioning"
+                                                            id="not-conditioning">
+                                                        <label for="not-conditioning"
+                                                            class="cursor-pointer text-lg text-Base-500">لا</label>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+
+                                            <!--   -->
+                                            <div class="col-span-1 lg:col-span-3 flex flex-col gap-4">
+                                                <h4 class="label-title">هل يحتوي المبنى الخاص بك على مطبخ مثبت؟</h4>
+
+                                                <div class="grid lg:grid-cols-2 gap-5">
+                                                    <div class="flex items-center gap-3">
+                                                        <input type="radio" class="form-radio" name="kitchen"
+                                                            id="yes-kitchen">
+                                                        <label for="yes-kitchen"
+                                                            class="cursor-pointer text-lg text-Base-500">نعم</label>
+                                                    </div>
+
+                                                    <div class="flex items-center gap-3">
+                                                        <input type="radio" class="form-radio" name="kitchen"
+                                                            id="not-kitchen">
+                                                        <label for="not-kitchen"
+                                                            class="cursor-pointer text-lg text-Base-500">لا</label>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+
+                                            <!--underground parking -->
+                                            <div class="col-span-1 lg:col-span-2 flex flex-col gap-4">
+                                                <label for="underground-parking" class="label-title">
+                                                    عدد المواقف تحت الأرض
+                                                </label>
+                                                <input type="number" id="underground-parking" name="underground-parking"
+                                                    placeholder="عدد المواقف تحت الأرض" class="form-input">
+                                            </div>
+
+
+                                            <!--open parking -->
+                                            <div class="col-span-1 lg:col-span-2 flex flex-col gap-4">
+                                                <label for="open-parking" class="label-title">
+                                                    عدد المواقف المفتوحة
+                                                </label>
+                                                <input type="number" id="open-parking" name="open-parking"
+                                                    placeholder="عدد المواقف المفتوحة" class="form-input">
+                                            </div>
+
+
+                                            <!--shaded  parking -->
+                                            <div class="col-span-1 lg:col-span-2 flex flex-col gap-4">
+                                                <label for="shaded-parking" class="label-title">
+                                                    عدد المواقف المظللة
+                                                </label>
+                                                <input type="number" id="shaded-parking" name="shaded-parking"
+                                                    placeholder="عدد المواقف المظللة" class="form-input">
+                                            </div>
+
+                                        </div>
+                                    </fieldset>
+
+
+                                    <fieldset class="flex flex-col gap-8">
+                                        <h3 class="fieldset-title">
+                                            قيمة إيجار الوحدة
+                                        </h3>
+
+                                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-6">
+
+                                            <!--rent value -->
+                                            <div class=" flex flex-col gap-4">
+                                                <label for="rent-value" class="label-title">
+                                                    قيمة الإيجار السنوي المطلوب
+                                                </label>
+                                                <input type="number" id="rent-value" name="rent-value"
+                                                    placeholder="قيمة الإيجار السنوي المطلوب" class="form-input">
+                                            </div>
+
+                                            <!--  price negotiable?  -->
+                                            <div class="flex flex-col gap-4">
+                                                <h4 class="label-title">هل السعر قابل للتفاوض؟</h4>
+
+                                                <div class="grid lg:grid-cols-2 gap-5">
+                                                    <div class="flex items-center gap-3">
+                                                        <input type="radio" class="form-radio" name="negotiable"
+                                                            id="yes-negotiable">
+                                                        <label for="yes-negotiable"
+                                                            class="cursor-pointer text-lg text-Base-500">نعم</label>
+                                                    </div>
+
+                                                    <div class="flex items-center gap-3">
+                                                        <input type="radio" class="form-radio" name="negotiable"
+                                                            id="not-negotiable">
+                                                        <label for="not-negotiable"
+                                                            class="cursor-pointer text-lg text-Base-500">لا</label>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+
+                                    </fieldset>
+
+
+                                    <input type="submit" value="أرسل الطلب" class="main-btn py-5">
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="flex flex-col gap-[60px] h-fit lg:sticky lg:top-20">
+                            <div class="flex flex-col gap-10">
+                                <p class="text-Base-600 text-[28px] leading-[120%]">
+                                    الامتيازات التي حصلت عليها الآن
+                                </p>
+                                <div class="flex flex-col gap-3">
+                                    <!-- privileges-item -->
+                                    <div class="privileges-item">
+                                        <span class="icon">
+                                            <img src="assets/images/radio.svg" width="10" height="10" alt="radio">
+                                        </span>
+                                        <p class="">
+                                            توثيق عقد وساطة في الهيئة العامة للعقار.
+                                        </p>
+                                    </div>
+
+                                    <!-- privileges-item -->
+                                    <div class="privileges-item">
+                                        <span class="icon">
+                                            <img src="assets/images/radio.svg" width="10" height="10" alt="radio">
+                                        </span>
+                                        <p class="">
+                                            استخراج رخصة تسويق للوحدة العقارية.
+                                        </p>
+                                    </div>
+
+                                    <!-- privileges-item -->
+                                    <div class="privileges-item">
+                                        <span class="icon">
+                                            <img src="assets/images/radio.svg" width="10" height="10" alt="radio">
+                                        </span>
+                                        <p class="">
+                                            تصوير احترافي للوحدات العقارية.
+                                        </p>
+                                    </div>
+
+                                    <!-- privileges-item -->
+                                    <div class="privileges-item">
+                                        <span class="icon">
+                                            <img src="assets/images/radio.svg" width="10" height="10" alt="radio">
+                                        </span>
+                                        <p class="">
+                                            تسويق الوحدات العقارية علي المنصات الإلكترونية.
+                                        </p>
+                                    </div>
+
+                                    <!-- privileges-item -->
+                                    <div class="privileges-item">
+                                        <span class="icon">
+                                            <img src="assets/images/radio.svg" width="10" height="10" alt="radio">
+                                        </span>
+                                        <p class="">
+                                            متابعة زيارات الوحدة العقارية.
+                                        </p>
+                                    </div>
+
+                                    <!-- privileges-item -->
+                                    <div class="privileges-item">
+                                        <span class="icon">
+                                            <img src="assets/images/radio.svg" width="10" height="10" alt="radio">
+                                        </span>
+                                        <p class="">
+                                            فرز المستأجرين المحتملين للوحدة.
+                                        </p>
+                                    </div>
+
+                                    <!-- privileges-item -->
+                                    <div class="privileges-item">
+                                        <span class="icon">
+                                            <img src="assets/images/radio.svg" width="10" height="10" alt="radio">
+                                        </span>
+                                        <p class="">
+                                            إعداد وتوثيق عقد الإيجار في منصة إيجار.
+                                        </p>
+                                    </div>
+
+                                    <!-- privileges-item -->
+                                    <div class="privileges-item">
+                                        <span class="icon">
+                                            <img src="assets/images/radio.svg" width="10" height="10" alt="radio">
+                                        </span>
+                                        <p class="">
+                                            تحصيل الدفعة الأولي من المستأجر.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div
+                                class="rounded-[20px] p-8 border border-[#0CB0A6] bg-white shadow-services-shad flex flex-col gap-8 items-start relative overflow-hidden">
+                                <span
+                                    class="circle-shap circle-shap-1 top-[-120px] left-[-50px] w-[215px] h-[215px] blur-[150px]"></span>
+                                <span
+                                    class="circle-shap circle-shap-2 top-[-120px] left-[-50px] w-[215px] h-[215px] blur-[150px]"></span>
+
+                                <div class="p-5 rounded-[20px] bg-Base-100 border border-Base-300">
+                                    <img src="assets/images/dollar-coin.svg" width="32" height="32" alt="dollar-coin">
+                                </div>
+                                <div class="flex flex-col gap-4">
+                                    <h3 class="text-Neutral-Black text-[40px] leading-[120%] font-semibold">
+                                        تكاليف الخدمة
+                                    </h3>
+                                    <p class="flex flex-col gap-6 text-Neutral-Black text-xl leading-[120%]">
+                                        <span>
+                                            2.5% رسوم الخدمات من مالك العقار
+                                        </span>
+                                        <span>
+                                            2.5% رسوم الوساطة و 15% قيمة الضريبة المضافة من المستأجر
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
     </main>
