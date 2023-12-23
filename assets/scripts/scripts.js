@@ -23,3 +23,12 @@ $('.testimonials-owl').owlCarousel({
 
     }
 })
+
+AOS.init({
+    debounceDelay: 200, 
+    throttleDelay: 399,
+    duration: 900, 
+    easing: 'ease', 
+    once: true, 
+    disable: 'mobile'
+});
