@@ -49,7 +49,7 @@
 
   /* header */
   .jywar-header {
-    @apply sticky top-0 start-0 w-full z-50 bg-Base-800;
+    @apply fixed top-0 start-0 w-full z-50 bg-Base-800;
   }
   .nav-link {
     @apply text-[28px] text-Base-300;
