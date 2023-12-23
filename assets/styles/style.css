@@ -450,6 +450,8 @@ video {
   src: url("../fonts/BukraWide/29LTBukraWide-Regular.otf");
 
   font-weight: 400;
+
+  font-display: swap
 }
 
 @font-face {
@@ -458,6 +460,8 @@ video {
   src: url("../fonts/BukraWide/29LTBukraWide-Bold.otf");
 
   font-weight: 700;
+
+  font-display: swap
 }
 
 @font-face {
@@ -466,6 +470,8 @@ video {
   src: url("../fonts/29LTZaridSans/29LTZaridSans-Light.otf");
 
   font-weight: 400;
+
+  font-display: swap
 }
 
 @font-face {
@@ -474,6 +480,8 @@ video {
   src: url("../fonts/29LTZaridSans/29LTZaridSans-SemiBold.otf");
 
   font-weight: 600;
+
+  font-display: swap
 }
 
 @font-face {
@@ -482,6 +490,8 @@ video {
   src: url("../fonts/29LTZaridSans/29LTZaridSans-Bold.otf");
 
   font-weight: 700;
+
+  font-display: swap
 }
 
 *, ::before, ::after {
@@ -1139,10 +1149,6 @@ select {
   height: 100vh;
 }
 
-.min-h-screen {
-  min-height: 100vh;
-}
-
 .w-10 {
   width: 2.5rem;
 }
@@ -1297,6 +1303,10 @@ select {
   gap: 2rem;
 }
 
+.gap-\[100px\] {
+  gap: 100px;
+}
+
 .gap-\[60px\] {
   gap: 60px;
 }
@@ -1433,6 +1443,11 @@ select {
   padding: 28px;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1466,11 +1481,6 @@ select {
 .py-\[18px\] {
   padding-top: 18px;
   padding-bottom: 18px;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .pb-\[120px\] {
