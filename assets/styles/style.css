@@ -1609,6 +1609,11 @@ select {
   color: rgb(12 176 166 / var(--tw-text-opacity));
 }
 
+.text-\[\#A9B8BC\] {
+  --tw-text-opacity: 1;
+  color: rgb(169 184 188 / var(--tw-text-opacity));
+}
+
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(71 156 255 / var(--tw-text-opacity));
