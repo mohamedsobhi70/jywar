@@ -1782,6 +1782,10 @@ select {
     width: 46%;
   }
 
+  .lg\:w-\[350px\] {
+    width: 350px;
+  }
+
   .lg\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
