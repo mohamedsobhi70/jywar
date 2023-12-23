@@ -41,7 +41,7 @@
     @apply scroll-smooth;
   }
   .main-btn {
-    @apply py-6 px-[60px] bg-blue-500 rounded-full font-bold text-[21px] text-white leading-normal font-BukraWide;
+    @apply py-4 lg:py-6 px-[60px] bg-blue-500 rounded-full font-bold text-lg lg:text-[21px] text-white leading-normal font-BukraWide;
   }
 
   .section-title {
